@@ -1,6 +1,6 @@
 import { Box, Flex, SimpleGrid, Text, theme } from "@chakra-ui/react";
-import { Header } from "../componets/header";
-import { Sidebar } from "../componets/sidebar";
+import { Header } from "../componets/header/index";
+import { Sidebar } from "../componets/sidebar/index";
 //import Chart from 'react-apexcharts'
 import dynamic from "next/dynamic"; //essa importação serve para funcionar apenas no lado do cliente (a bibli dos graficos funciona apenas no lado do cliente, não pelo server do nextjs)
 
