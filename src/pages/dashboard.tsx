@@ -9,7 +9,6 @@ const Chart = dynamic (() => import('react-apexcharts'), {
 })
 
 const options = {
-    Chart: {
         toolbar: {
             show: false
         },
@@ -17,17 +16,15 @@ const options = {
             enabled: false
         },
         forceColor: theme.colors.gray[500],
-    },
+
     grid: {
         show:false
     },
     dataLabels: {
         enabled: false,
     },
-    tooltip: {
-        enable: false,
-    },
-    xaxis: {
+   
+
         type: "datetime",
         axisBorder: {
             color: theme.colors.gray[600]
@@ -44,7 +41,7 @@ const options = {
             '2022-03-16T00:00:00.000Z',
             '2022-03-17T00:00:00.000Z',
         ]
-    }
+    
 }
 
 const series = [{ 
@@ -60,7 +57,7 @@ export default function Dashboard () {
             <Flex width="100%" my="6" maxWidth={1480} mx="auto" px="6">
                 <Sidebar/>
 
-                <SimpleGrid flex="1" gap="1" minChildWidth="320px" align="flex-start">
+                <SimpleGrid flex="1" gap="1" minChildWidth="320px">
                     <Box
                         p="8"
                         bg="gray.800"
