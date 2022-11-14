@@ -1,7 +1,10 @@
 import { Flex, Icon, Input } from "@chakra-ui/react";
+import { useState } from "react";
 import { RiSearchLine } from "react-icons/ri";
 
 export function Search () {
+    const [search, Setsearch] = useState ('');
+//ver debounce
     return (
         <Flex
                 as="label"
@@ -16,7 +19,7 @@ export function Search () {
                 bg="gray.800"
                 borderRadius="full">
 
-                    <Input color="gray.50" variant='unstyled' px="4" mr="4" placeholder="Buscar na Plataforma" _placeholder={{color:'gray.400'}}></Input>
+                    <Input color="gray.50" variant='unstyled' px="4" mr="4" placeholder="Buscar na Plataforma" _placeholder={{color:'gray.400'}} value={search} onChange={event => Setsearch(event.target.value)}></Input>
                     <Icon as={RiSearchLine} fontSize="20"/> {/*toda vez que for usar uma icone exterior do chakra, tem que passar ela desse jeito*/}
                     
         </Flex>
