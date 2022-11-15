@@ -10,6 +10,8 @@ type SignInFormData = {
 export default function SingIn() {
   const { register, handleSubmit, formState } = useForm();
 
+  const errors = formState.errors
+
   const handleSingIn: SubmitHandler<SignInFormData> = async (values) => {
     await new Promise(resolve => setTimeout (resolve, 2000));
 
