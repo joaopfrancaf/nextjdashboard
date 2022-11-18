@@ -4,7 +4,7 @@ import { RiAddLine, RiPencilLine } from "react-icons/ri";
 import { Input } from "../../componets/form/input";
 import { Header } from "../../componets/header";
 import { Pagination } from "../../componets/pagination";
-import { Sidebar } from "../../componets/sidebar";
+import { Sidebar } from "../../componets/sidebar/Index";
 
 export default function CreateUser() {
     return (

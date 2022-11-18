@@ -3,7 +3,7 @@ import Link from "next/link";
 import { RiAddLine, RiPencilLine } from "react-icons/ri";
 import { Header } from "../../componets/header";
 import { Pagination } from "../../componets/pagination";
-import { Sidebar } from "../../componets/sidebar";
+import { Sidebar } from "../../componets/sidebar/Index";
 
 export default function Userlist() {
     const isWideVersion = useBreakpointValue ({
